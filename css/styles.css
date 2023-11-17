@@ -422,19 +422,29 @@ footer{
 }
 
 .li-soc-mereji{
-    background-color: #4D5AE5;
-    border-radius: 50%;
     width: 40px;
     height: 40px;
+}
+
+.linksoc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color:#4d5ae5;
+    border-radius:50%;
+}
+
+.linksoc:hover,
+.linksoc:focus{
+    background-color:#404bbf;
 }
 
 .icon-ist{
     display: block;
     width: calc((100% - 3*24px) / 4);
     fill: #F4F4FD;
-    width: 16px;
-    height: 16px;
-    margin: 12px;
 }
 
 .icon-ist:hover{
@@ -445,9 +455,6 @@ footer{
     display: block;
     width: calc((100% - 3*24px) / 4);
     fill: #F4F4FD;
-    width: 16px;
-    height: 16px;
-    margin: 12px;
 }
 
 .icon-fb:hover{
@@ -458,9 +465,6 @@ footer{
     display: block;
     width: calc((100% - 3*24px) / 4);
     fill: #F4F4FD;
-    width: 16px;
-    height: 16px;
-    margin: 12px;
 }
 
 .icon-link:hover{
@@ -471,9 +475,6 @@ footer{
     display: block;
     width: calc((100% - 3*24px) / 4);
     fill: #F4F4FD;
-    width: 16px;
-    height: 16px;
-    margin: 12px;
 }
 
 .icon-twit:hover{
