@@ -481,39 +481,34 @@ footer{
 }
 
 .box-svg{
+    display: flex;
     border: 1px solid #8E8F99;
     border-radius: 4px;
-    background-color: #F4F4FD;
+    background-color: #f4f4fd; 
     width: 264px;
     height: 112px;
     margin-bottom: 8px;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon-antenna{
     display: block;
-    width: 64px;
-    height: 64px;
     margin: 24px 100px;
 }
 
 .icon-clock{
     display: block;
-    width: 64px;
-    height: 64px;
     margin: 24px 100px;
 }
 
 .icon-diagram{
     display: block;
-    width: 64px;
-    height: 64px;
     margin: 24px 100px;
 }
 
 .icon-astronaut{
     display: block;
-    width: 64px;
-    height: 64px;
     margin: 24px 100px;
 }
 
