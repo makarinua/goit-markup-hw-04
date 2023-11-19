@@ -391,8 +391,13 @@ footer{
 }
 
 .footer-text-logo{
-    position: relative;
+    display: flex;
+    align-items: baseline;
     padding: 100px 0;
+}
+
+.footer-padding{
+    margin-right: 120px;
 }
 
 .logo-footer{
@@ -517,16 +522,12 @@ footer{
 }
 
 .social-media{
-    position: absolute;
-    width: 208px;
-    right: 692px;
-    top: 132px;
 }
 
 .title-social-media{
-    color: #FFF;
-    font-size: 16px;
     font-weight: 500;
+    font-size: 16px;
+    color: #FFF;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
@@ -545,38 +546,43 @@ footer{
     height: 40px;
 }
 
-.social-media-icon-ist{
+.social-media-linksoc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color:#4d5ae5;
+    border-radius:50%;
+
+}
+
+.social-media-linksoc:hover,
+.social-media-linksoc:focus{
+    background-color: #31d0aa;
+}
+
+
+.social-media-svg{
     display: block;
-    width: calc((100% - 3*24px) / 4);
-    fill: #F4F4FD;
-    width: 16px;
-    height: 16px;
-    margin: 12px;
+    fill: #f4f4fd;
+}
+
+.social-media-svg:hover {
+    fill: #404BBF;
+}
+
+
+
+.social-media-icon-ist{
 }
 
 .social-media-icon-twit{
-    display: block;
-    width: calc((100% - 3*24px) / 4);
-    fill: #F4F4FD;
-    width: 16px;
-    height: 16px;
-    margin: 12px;
 }
 
 .social-media-icon-fb{
-    display: block;
-    width: calc((100% - 3*24px) / 4);
-    fill: #F4F4FD;
-    width: 16px;
-    height: 16px;
-    margin: 12px;
 }
 
 .social-media-icon-link{
-    display: block;
-    width: calc((100% - 3*24px) / 4);
-    fill: #F4F4FD;
-    width: 16px;
-    height: 16px;
-    margin: 12px;
+
 }
