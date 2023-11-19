@@ -1,4 +1,4 @@
-/* Скидання стилів браузера */
+/* ========================== Скидання стилів браузера =================================*/
 *,
 *::before,
 *::after {
@@ -28,8 +28,9 @@ img{
 a{
     text-decoration: none;
 }
+/* ========================== Кінець скидання стилів браузера =================================*/
 
-/* Основний контент сторінки */
+/* ========================== Основний контент сторінки =================================*/
 body{
     font-family: 'Roboto', sans-serif;
     color: #434455;
@@ -48,8 +49,10 @@ body{
     padding-top: 120px;
     padding-bottom: 120px;
 }
+/* ========================== Кінець основного контенту сторінки =================================*/
 
-/* Стилі для header сторінки*/
+/* ========================== Стилі для header сторінки =================================*/
+
 .top-line{
     border-bottom: 1px solid #e7e9fc;
     box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -144,14 +147,15 @@ body{
 .address-link:focus{
     color: #404BBF;
 }
+/* ========================== Кінець стилів для header сторінки =================================*/ 
 
-/* Стилі для головного контенту розділу hero image*/
+/* ========================== Стилі для головного контенту розділу hero image =================================*/
+
 .hero-image-bg{
     background-color: #2E2F42;
 }
 
 .hero-image{
-    
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/heroimage.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -160,7 +164,7 @@ body{
     padding: 188px 0;
 }
 
-.hero-image-title {
+.hero-image-title{
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
@@ -292,6 +296,45 @@ body{
     padding: 32px 0;
 }
 
+.icon-soc-mereji{
+
+}
+
+.soc-mereji {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.li-soc-mereji {
+    width: 40px;
+    height: 40px;
+}
+
+.linksoc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.linksoc:hover,
+.linksoc:focus {
+    background-color: #404bbf;
+}
+
+.icon-soc-mereji {
+    display: block;
+    fill: #F4F4FD;
+}
+
+.icon-soc-mereji:hover {
+    fill: #404BBF;
+}
 /* Стилы роздылу portfolio*/
 .box{
     position: relative;
@@ -469,72 +512,17 @@ body{
     fill: #31d0aa;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .social-media-linksoc:hover,
 .social-media-linksoc:focus{
     background-color: #31d0aa;
 }
-
-
-
-
 /* ========================= Кінець розділу footer ================================*/
 
 
 
 
 
-.soc-mereji {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
 
-}
-
-.li-soc-mereji {
-
-    width: 40px;
-    height: 40px;
-}
-
-.linksoc {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: #4d5ae5;
-    border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.linksoc:hover,
-.linksoc:focus {
-    background-color: #404bbf;
-}
-
-.icon-svg {
-    display: block;
-    fill: #F4F4FD;
-}
-
-.icon-svg:hover {
-    fill: #404BBF;
-}
 
 .box-svg {
     display: flex;
