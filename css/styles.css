@@ -1,16 +1,16 @@
-/* ========================== Скидання стилів браузера =================================*/
+/*========================== Скидання стилів браузера =================================*/
 *,
 *::before,
-*::after {
-  box-sizing: border-box;
+*::after{
+    box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p{
 	margin-top: 0;
     margin-bottom: 0;
 }
 
-ul, ol {
+ul, ol{
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
@@ -30,7 +30,7 @@ a{
 }
 /* ========================== Кінець скидання стилів браузера =================================*/
 
-/* ========================== Основний контент сторінки =================================*/
+/* ========================== Основний контент =================================*/
 body{
     font-family: 'Roboto', sans-serif;
     color: #434455;
@@ -49,9 +49,9 @@ body{
     padding-top: 120px;
     padding-bottom: 120px;
 }
-/* ========================== Кінець основного контенту сторінки =================================*/
+/* ========================== Кінець основного контенту =================================*/
 
-/* ========================== Стилі для header сторінки =================================*/
+/* ========================== Стилі для header =================================*/
 
 .top-line{
     border-bottom: 1px solid #e7e9fc;
@@ -101,27 +101,21 @@ body{
     display: block;
     position: relative;
     text-decoration: none;
-    color: #404bbf;
-    padding: 24px 0;
+    color: #2E2F42;
+    padding: 20px 0;
     border-bottom: 4px solid #fff;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.main-meny-link::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;  
+.activiti-page{
+    color:#404BBF;
+    border-bottom: 4px solid #404BBF;
+    border-radius: 2px;
 }
 
 .main-meny-link:hover,
 .main-meny-link:focus{
     color: #404BBF;
-    border-bottom: 4px solid #404BBF;
-    border-radius: 2px;
 }
 
 .shadow{
@@ -157,7 +151,7 @@ body{
     background-position: center;
     background-size: cover;
     max-width: 1440px;
-    padding: 188px 0;
+    margin: auto auto;
 }
 
 .hero-image{
@@ -173,6 +167,7 @@ body{
     color: #FFFFFF;
     max-width: 496px;
     margin: 0 auto;
+    padding-top: 188px;
 }
 
 .hero-button{
@@ -193,6 +188,7 @@ body{
     border-radius: 4px;
     margin-top: 48px;
     transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 188px;
 }
 
 .hero-button:hover,
@@ -290,6 +286,7 @@ body{
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+    margin-bottom: 8px;
 }
 
 .teacher-pib-posada{
@@ -429,9 +426,10 @@ body{
 
 /* ========================= Стилі розділу footer ================================*/
 .footer-text-logo {
-    padding-top: 100px;
+    padding-top: 140px;
     background-color: #2E2F42;
     height: 312px;
+    padding-bottom: 100px;
 }
 
 .footer-padding {
@@ -537,20 +535,16 @@ body{
 
 .icon-antenna {
     display: block;
-    margin: 24px 100px;
 }
 
 .icon-clock {
     display: block;
-    margin: 24px 100px;
 }
 
 .icon-diagram {
     display: block;
-    margin: 24px 100px;
 }
 
 .icon-astronaut {
     display: block;
-    margin: 24px 100px;
 }
