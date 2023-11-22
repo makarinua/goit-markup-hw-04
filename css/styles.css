@@ -169,11 +169,6 @@ body{
 
 }
 
-.hero-image{
-    background-color: #2E2F42;
-    background-origin: border-box;
-}
-
 .hero-image-bg{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/heroimage.jpg);
     background-repeat: no-repeat;
@@ -181,6 +176,7 @@ body{
     background-size: cover;
     max-width: 1440px;
     margin: auto auto;
+    background-color: #2E2F42;
 }
 
 /*.container*/
