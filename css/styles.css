@@ -1,4 +1,4 @@
-/*========================== Скидання стилів браузера =================================*/
+/*===================== Скидання =====================*/
 *,
 *::before,
 *::after{
@@ -28,9 +28,9 @@ img{
 a{
     text-decoration: none;
 }
-/* ========================== Кінець скидання стилів браузера =================================*/
+/*===================== /Скидання =================*/
 
-/* ========================== Основний контент =================================*/
+/*=================== Загальні ====================*/
 body{
     font-family: 'Roboto', sans-serif;
     color: #434455;
@@ -49,14 +49,15 @@ body{
     padding-top: 120px;
     padding-bottom: 120px;
 }
-/* ========================== Кінець основного контенту =================================*/
+/*=================== /Загальні ====================*/
 
-/* ========================== Стилі для header =================================*/
-
+/*===================== header =====================*/
 .top-line{
     border-bottom: 1px solid #e7e9fc;
     box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
+/*container*/
 
 .container-header{
     display: flex;
@@ -97,12 +98,21 @@ body{
     text-align: left;
 }
 
+.main-meny-li{
+
+}
+
 .main-meny-link{
     display: block;
     text-decoration: none;
     color: #2E2F42;
     padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-meny-link:hover,
+.main-meny-link:focus{
+    color: #404BBF;
 }
 
 .activiti-page{
@@ -121,18 +131,17 @@ body{
     border-radius: 2px; 
 }
 
-.main-meny-link:hover,
-.main-meny-link:focus{
-    color: #404BBF;
-}
+.contacts-meny{
 
-.shadow{
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .contacts-meny-ul{
     display: flex;
     gap: 40px;    
+}
+
+.contacts-meny-li{
+
 }
 
 .address-link{
@@ -149,9 +158,21 @@ body{
 .address-link:focus{
     color: #404BBF;
 }
-/* ========================== Кінець стилів для header сторінки =================================*/ 
 
-/* ========================== Стилі для головного контенту розділу hero image =================================*/
+.shadow{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*===================== /header =====================*/
+
+/*===================== 1 Секція =====================*/
+.web-page-main{
+
+}
+
+.hero-image{
+    background-color: #2E2F42;
+    background-origin: border-box;
+}
 
 .hero-image-bg{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/heroimage.jpg);
@@ -162,9 +183,9 @@ body{
     margin: auto auto;
 }
 
-.hero-image{
-    background-color: #2E2F42;
-}
+/*.container*/
+
+/*.section*/
 
 .hero-image-title{
     font-size: 56px;
@@ -175,7 +196,6 @@ body{
     color: #FFFFFF;
     max-width: 496px;
     margin: 0 auto;
-    padding-top: 188px;
 }
 
 .hero-button{
@@ -196,15 +216,19 @@ body{
     border-radius: 4px;
     margin-top: 48px;
     transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 188px;
 }
 
 .hero-button:hover,
 .hero-button:focus{
     background-color: #404BBF;
 }
+/*===================== /1 Секція =====================*/
+/*===================== 2 Секція =====================*/
 
-/* Стилі для головного контенту розділу benefits*/
+/*.section*/
+
+/*.container*/
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -216,7 +240,7 @@ body{
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
 .benefits{
     display: flex;
@@ -227,6 +251,33 @@ body{
     width: calc((100% - 72px) / 4);
 }
 
+.box-svg {
+    display: flex;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    background-color: #f4f4fd;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-antenna {
+    display: block;
+}
+
+.icon-clock {
+    display: block;
+}
+
+.icon-diagram {
+    display: block;
+}
+
+.icon-astronaut {
+    display: block;
+}
 
 .benefits-title{
     font-size: 20px;
@@ -245,11 +296,15 @@ body{
     text-align: left;
     color: #434455;
 }
-
-/* Стилі для головного контенту розділу our-team*/
+/*===================== /2 Секція =====================*/
+/*===================== 3 Секція =====================*/
 .our-team{
     background-color: #F4F4FD;
 }
+
+/*.section*/
+
+/*.container*/
 
 .our-team-title{
     font-size: 36px;
@@ -278,6 +333,10 @@ body{
     width: 100%;
 }
 
+.teacher-pib-posada{
+    padding: 32px 0;
+}
+
 .our-team-teacher-title{
     font-size: 20px;
     font-weight: 500;
@@ -295,14 +354,6 @@ body{
     text-align: center;
     color: #434455;
     margin-bottom: 8px;
-}
-
-.teacher-pib-posada{
-    padding: 32px 0;
-}
-
-.icon-soc-mereji{
-
 }
 
 .soc-mereji {
@@ -340,7 +391,13 @@ body{
 .icon-soc-mereji:hover {
     fill: #404BBF;
 }
-/* ===================================  Стилы роздылу portfolio ====================================*/
+/*===================== /3 Секція =====================*/
+/*===================== 4 Секція =====================*/
+
+/*.section*/
+
+/*.container*/
+
 .portfolio{
     font-size: 36px;
     font-weight: 700;
@@ -370,7 +427,7 @@ body{
     transform: translateY(0%);
 }
 
-.box {
+.box{
     position: relative;
     width: 100%;
     margin: 0 auto;
@@ -431,12 +488,11 @@ body{
     text-align: left;
     color: #434455;
 }
-
-/* ========================= Стилі розділу footer ================================*/
+/*===================== /4 Секція =====================*/
+/*=====================  footer   =====================*/
 .footer-text-logo {
-    padding-top: 140px;
+    padding-top: 100px;
     background-color: #2E2F42;
-    height: 312px;
     padding-bottom: 100px;
 }
 
@@ -444,6 +500,8 @@ body{
     display: flex;
     align-items: baseline;
 }
+
+/*.container*/
 
 .footer-logo-text{
     margin-right: 120px;
@@ -477,6 +535,7 @@ body{
 }
 
 .social-media{
+
 }
 
 .title-social-media {
@@ -498,10 +557,6 @@ body{
 .li-social-media {
     width: 40px;
     height: 40px;
-}
-
-.social-media-icon-ist{
-
 }
 
 .social-media-linksoc{
@@ -528,31 +583,4 @@ body{
 .social-media-svg-item:hover {
     fill: #31d0aa;
 }
-/* ========================= Кінець розділу footer ================================*/
-.box-svg {
-    display: flex;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-    background-color: #f4f4fd;
-    width: 264px;
-    height: 112px;
-    margin-bottom: 8px;
-    align-items: center;
-    justify-content: center;
-}
-
-.icon-antenna {
-    display: block;
-}
-
-.icon-clock {
-    display: block;
-}
-
-.icon-diagram {
-    display: block;
-}
-
-.icon-astronaut {
-    display: block;
-}
+/*=====================  /footer   =====================*/
